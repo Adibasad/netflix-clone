@@ -6,10 +6,12 @@ A dynamic and responsive Netflix clone built with React, featuring real-time dat
 <!-- 
 firebase link 
 -->
-![App Screenshot](Screenshot(11).png)
+![Netflix Clone Screenshot](Screenshot(10).png)
+
 ![Netflix Clone Screenshot](Screenshot(11).png)
 
-Screenshot (11)
+![Netflix Clone Screenshot](Screenshot(12).png)
+Can play trailer!
 
 
 ## Features
