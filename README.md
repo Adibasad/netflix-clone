@@ -6,8 +6,8 @@ A dynamic and responsive Netflix clone built with React, featuring real-time dat
 <!-- 
 firebase link 
 -->
-![App Screenshot](images/screenshot.png)
-![Alt text](images/screenshot.png)
+![App Screenshot](images/screenshot(11).png)
+![Alt text](images/screenshot(11).png)
 
 
 ## Features
