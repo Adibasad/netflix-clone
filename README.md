@@ -10,7 +10,7 @@ firebase link
 
 ![Netflix Clone Screenshot](Screenshot(11).png)
 
-![Netflix Clone Screenshot](Screenshot(12).png)
+![Netflix Clone Screenshot](Screenshot(13).png)
 Can play trailer!
 
 
