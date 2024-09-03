@@ -1,0 +1,27 @@
+
+.banner{
+    height: 660px;
+}
+
+.info_banner{
+    padding-top: 280px;
+    padding-left: 57px;
+    width: 600px;
+    max-height: 20px;
+}
+
+.banner_fadedown{
+    position: relative;
+    top: 280px;
+    height:100px;
+    background-image: linear-gradient(
+     to bottom,
+     transparent,
+     rgba(37, 37, 37, 0.61),
+      black
+    );
+}
+/* .button_icon{
+    height: 10px;
+} */
+

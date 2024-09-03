@@ -1,0 +1,60 @@
+
+.nav {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    padding: 20px 20px 20px 57px;
+    height: 60px;
+    left: 0;
+    justify-content: space-between;
+    /* Animation */
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+    color: black;
+  }
+  
+  .nav ul {
+     display: flex;
+     margin-left: 10px;
+     padding-left: 100px;
+     text-decoration: none;
+     list-style-type: none;
+  }
+
+  .nav ul li a {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  .searchBar
+  {
+    /* position: fixed; */
+    border-radius: 80px;
+    margin-right: 70px;
+  }
+
+  .user {
+    position: fixed;
+    top: 9px;
+    right: 20px;
+    width: 40px;
+    object-fit: contain;
+  }
+  
+    /* scroll bar transition */
+    .nav_black {
+      background-color: black;
+      transition: ease-in-out 800ms;
+    }
+  
+  .nav_logo {
+    position: fixed;
+    width: 80px;
+    height: 30px;
+    object-fit: contain;
+  }
+  
