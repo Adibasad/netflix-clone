@@ -3,7 +3,7 @@ A dynamic and responsive Netflix clone built with React, featuring real-time dat
 
 ## Demo
 
-[netflix=clone ](https://netflix-clone-b04c1-61e38.web.app/)
+Website: [netflix-clone ](https://netflix-clone-b04c1-61e38.web.app/)
 
 ![Netflix Clone Screenshot](Screenshot(10).png)
 
@@ -142,7 +142,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-- **Your Name**
+- **Adiba Sadaf**
 - **Email:** adibasadaf300@gmail.com
 
 ---
