@@ -3,7 +3,8 @@ A dynamic and responsive Netflix clone built with React, featuring real-time dat
 
 ## Demo
 
-Website: [Netflix Clone Demo](https://netflix-clone-b04c1-61e38.web.app/674a09adf9cfe8a3b4b7a33e)
+Website: [Netflix Clone Demo](https://netflix-clone-b04c1-61e38.web.app)
+
 
 ![Netflix Clone Screenshot](Screenshot(10).png)
 
