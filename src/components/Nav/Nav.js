@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
+import { MdOutlineSearch } from "react-icons/md";
 
 const Nav = () => {
   const [scroll, setScroll] = useState(false);
@@ -29,7 +30,7 @@ const Nav = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-10 flex items-center px-6 py-4 transition-all duration-500 ${
+      className={`fixed top-0 left-0 w-full z-10 flex items-center justify-end lg:justify-between px-6 py-4 transition-all duration-500 ${
         scroll ? "bg-black" : "bg-transparent"
       }`}
     >
@@ -72,10 +73,10 @@ const Nav = () => {
         <input
           type="text"
           placeholder="Search..."
-          className="bg-transparent outline-none text-white placeholder-gray-400"
+          className="bg-gray px-3 h-8 outline-none text-white placeholder-white rounded-lg"
         />
         <button type="submit" className="text-white ml-2">
-          🔍
+          <MdOutlineSearch className="text-3xl"/>
         </button>
       </form>
 
