@@ -1,0 +1,101 @@
+import React, { useState, useEffect } from "react";
+import { Link, useParams } from "react-router-dom";
+import axios from "axios";
+
+const Nav = () => {
+  const [scroll, setScroll] = useState(false);
+  const [user, setUser] = useState(null);
+  const { id } = useParams();
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      try {
+        const response = await axios.get(`http://localhost:3001/user/${id}`);
+        setUser(response.data);
+      } catch (error) {
+        console.error("Error fetching user:", error.message);
+      }
+    };
+
+    if (id) fetchUser();
+
+    const handleScroll = () => {
+      setScroll(window.scrollY > 100);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [id]);
+
+  return (
+    <div
+      className={`fixed top-0 left-0 w-full z-10 flex items-center px-6 py-4 transition-all duration-500 ${
+        scroll ? "bg-black" : "bg-transparent"
+      }`}
+    >
+      {/* Netflix Logo */}
+      <Link to="/">
+        <img
+          className="w-20 h-8 object-contain"
+          src="https://www.freepnglogos.com/uploads/netflix-logo-0.png"
+          alt="Netflix Logo"
+        />
+      </Link>
+
+      {/* Navigation Links */}
+      <ul className="hidden md:flex space-x-6 ml-16">
+        <li>
+          <Link to="/" className="text-white hover:text-red-500 transition">
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/tv-shows"
+            className="text-white hover:text-red-500 transition"
+          >
+            TV Shows
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/movies"
+            className="text-white hover:text-red-500 transition"
+          >
+            Movies
+          </Link>
+        </li>
+      </ul>
+
+      {/* Search Bar */}
+      <form className="ml-auto hidden md:flex bg-gray-800 rounded-full px-4 py-1">
+        <input
+          type="text"
+          placeholder="Search..."
+          className="bg-transparent outline-none text-white placeholder-gray-400"
+        />
+        <button type="submit" className="text-white ml-2">
+          🔍
+        </button>
+      </form>
+
+      {/* User Avatar */}
+      <Link to="/create" className="ml-4">
+        <img
+          className="w-10 rounded-full"
+          src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
+          alt="User"
+        />
+      </Link>
+
+      {/* Welcome Message */}
+      {user && (
+        <div className="text-white ml-4 hidden md:block">
+          Welcome, {user.uname}!
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default Nav;
