@@ -11,7 +11,7 @@ const base_url = "https://image.tmdb.org/t/p/original/";
 const InfoModal = ({ movie, onClose }) => {
   if (!movie) return null;
 
-  console.log(movie);
+//   console.log(movie);
 
   return createPortal(
     <div
