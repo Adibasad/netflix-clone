@@ -69,21 +69,21 @@ const Nav = () => {
       </ul>
 
       {/* Search Bar */}
-      <form className="ml-auto hidden md:flex bg-gray-800 rounded-full px-4 py-1">
+      <form className="ml-auto hidden md:flex  rounded-full px-4 py-1">
         <input
           type="text"
           placeholder="Search..."
-          className="bg-gray px-3 h-8 outline-none text-white placeholder-white rounded-lg"
+          className="px-3 h-8 outline-none text-white placeholder-gray rounded-lg"
         />
-        <button type="submit" className="text-white ml-2">
-          <MdOutlineSearch className="text-3xl" />
+        <button type="submit" className=" ml-2">
+          <MdOutlineSearch className="text-3xl text-gray" />
         </button>
       </form>
 
       {/* User Avatar */}
-      <Link to="/create" className="ml-4">
+      <Link to="/create" className="ml-2">
         <img
-          className="w-10 rounded-full"
+          className="w-10 rounded-lg"
           src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
           alt="User"
         />

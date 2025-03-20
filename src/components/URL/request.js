@@ -1,7 +1,6 @@
-//f42736c82d130f113aaa2135e39e37ae
-//https://api.themoviedb.org/3/movie/11?api_key=f42736c82d130f113aaa2135e39e37ae
-// eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmNDI3MzZjODJkMTMwZjExM2FhYTIxMzVlMzllMzdhZSIsIm5iZiI6MTcyMzA5NTMyMC4wODQwNDksInN1YiI6IjY2YWIzNjExMzA2OGJmZTgwMDVhMDgyMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.thEGDn7vbIUG2wGV7RPZBhsf55xW0N8-vKc4vLkPzOw
-const API_KEY = "f42736c82d130f113aaa2135e39e37ae";
+
+const API_KEY = process.env.REACT_APP_TMDB_API_KEY;
+console.log("api" ,API_KEY);
 
 const request = {
   fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,

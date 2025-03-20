@@ -50,12 +50,12 @@ function Row({ title, fetchUrl, isLargeRow }) {
   };
 
   return (
-    <div className="bg-black ml-[57px] mt-[10px] mb-[10px]">
-      <h2 className="text-white text-[40px] font-bold py-[10px] mb-[15px]">
+    <div className="bg-black ml-6 lg:ml-[57px] mt-[10px] mb-[10px]">
+      <h2 className="text-white text-2xl lg:text-[40px] font-bold lg:py-[10px] mb-[15px]">
         {title}
       </h2>
 
-      <div className="flex overflow-x-scroll p-[20px] scrollbar-hide space-x-8">
+      <div className="flex overflow-x-scroll p-[20px] space-x-4" style={{ scrollbar: "none", msOverflowStyle: "none", "-webkit-scrollbar": "none" , scrollbarWidth: "none"}}>
         {movies.map((movie) => (
           <div
             key={movie.id}
