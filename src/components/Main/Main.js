@@ -25,7 +25,7 @@ function Main() {
   }, []);
 
   return (
-    <div className="pb-60"> 
+    <div className="pb-60">
       <header
         className="relative h-[300px] lg:h-[780px] bg-cover bg-center"
         style={{
@@ -40,16 +40,16 @@ function Main() {
             {movies?.overview}
           </p>
 
-          <div className="mt-4 flex gap-4">
+          <div className="mt-4 flex gap-4 text-sm lg:text-lg">
             <Link to={`/movie/${movies?.id}`}>
-              <button className="flex items-center gap-2 bg-white text-black font-bold px-6 py-2 rounded-md hover:bg-gray-200 transition">
+              <button className="flex items-center gap-2 bg-white text-black font-bold px-4 lg:px-6 py-2 rounded-md hover:bg-gray-200 transition">
                 <FaPlay />
                 Play
               </button>
             </Link>
             <button
               onClick={() => setIsModalOpen(true)}
-              className="flex items-center gap-2 bg-gray-700 text-white font-bold px-6 py-2 rounded-md hover:bg-gray-600 transition"
+              className="flex items-center gap-2 bg-gray-700 text-white font-bold px-4 lg:px-6 py-2 rounded-md hover:bg-gray-600 transition"
             >
               <AiOutlineInfoCircle />
               More Info
