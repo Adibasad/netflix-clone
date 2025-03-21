@@ -1,75 +1,151 @@
-<<<<<<< HEAD
 # netflix-clone
-This Netflix clone, built with React, features real-time data extraction and the ability to play movie trailers, closely mimicking the functionality of the original Netflix platform.
-=======
-# Getting Started with Create React App
+A dynamic and responsive Netflix clone built with React, featuring real-time data fetching and seamless movie trailer playback. This project replicates the core functionalities of Netflix with a sleek and modern user interface.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Demo
 
-## Available Scripts
+Website: [Netflix Clone Demo](https://netflix-clone-git-production-adibasads-projects.vercel.app/)
 
-In the project directory, you can run:
 
-### `yarn start`
+![Netflix Clone Screenshot](Screenshot(10).png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Netflix Clone Screenshot](Screenshot(11).png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Netflix Clone Screenshot](Screenshot(13).png)
+Can play trailer!
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `yarn build`
+- **Real-Time Data Fetching:** Utilizes the [TMDb API](https://www.themoviedb.org/documentation/api) to fetch up-to-date information on movies and TV shows.
+- **Trailer Playback:** Integrates `react-youtube` and `movie-trailer` packages to provide effortless streaming of movie and show trailers directly within the app.
+- **Responsive Design:** Ensures optimal viewing experience across a wide range of devices, including desktops, tablets, and mobile phones.
+- **Intuitive UI:** Mimics Netflix's sleek and user-friendly interface for easy navigation and content discovery.
+- **Dynamic Categories:** Displays content sorted into various genres and categories, updating in real-time.
+- **Hover Effects:** Interactive hover effects reveal additional information and playback options for a more engaging user experience.
+- **Search Functionality:** Allows users to search for their favorite movies and TV shows effortlessly.
+- **Optimized Performance:** Efficient loading and rendering of content for a smooth and fast user experience.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Frontend:**
+  - [React](https://reactjs.org/)
+  - [react-youtube](https://www.npmjs.com/package/react-youtube)
+  - [movie-trailer](https://www.npmjs.com/package/movie-trailer)
+  - [Axios](https://axios-http.com/)
+  - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+  - [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- **API:**
+  - [The Movie Database (TMDb) API](https://www.themoviedb.org/documentation/api)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `yarn eject`
+Follow these instructions to set up the project locally on your machine.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [Node.js](https://nodejs.org/en/) (v12 or later)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/netflix-clone.git
+   ```
+2. **Navigate to the project directory**
+   ```bash
+   cd netflix-clone
+   ```
+3. **Install dependencies**
+   ```bash
+   npm install
+   ```
+   or
+   ```bash
+   yarn install
+   ```
+4. **Obtain TMDb API Key**
+   - Sign up at [TMDb](https://www.themoviedb.org/) to get a free API key.
+   - Create a `.env` file in the root directory and add your API key:
+     ```
+     REACT_APP_TMDB_API_KEY=your_api_key_here
+     ```
+5. **Start the development server**
+   ```bash
+   npm start
+   ```
+   or
+   ```bash
+   yarn start
+   ```
+6. **Open your browser**
+   - Visit `http://localhost:3000` to view the app.
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Browse through different categories to discover movies and TV shows.
+- Hover over a movie/show poster to view additional details and play the trailer.
+- Use the search bar to find specific titles.
+  
+## Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+netflix-clone/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── components/
+│   │   ├── Banner.jsx
+│   │   ├── Nav.jsx
+│   │   └── Row.jsx
+│   ├── utils/
+│   │   ├── requests.js
+│   │   └── axios.js
+│   ├── App.js
+│   ├── index.js
+│   └── ...
+├── .env
+├── package.json
+└── README.md
+```
 
-### Code Splitting
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributions are welcome! Please follow these steps:
 
-### Analyzing the Bundle Size
+1. **Fork the repository**
+2. **Create a new branch**
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+3. **Make your changes**
+4. **Commit your changes**
+   ```bash
+   git commit -m 'Add some feature'
+   ```
+5. **Push to the branch**
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+6. **Open a Pull Request**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## License
 
-### Making a Progressive Web App
+This project is licensed under the [MIT License](LICENSE).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Acknowledgements
 
-### Advanced Configuration
+- [Netflix](https://www.netflix.com/) for the inspiration.
+- [TMDb](https://www.themoviedb.org/) for the comprehensive movie and TV data.
+- [React](https://reactjs.org/) community for the amazing ecosystem.
+- [YouTube](https://www.youtube.com/) for trailer streaming.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Contact
 
-### Deployment
+- **Adiba Sadaf**
+- **Email:** adibasadaf300@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> 4758fef (Initialize project using Create React App)
+Feel free to explore, use, and enhance this project. If you like it, give it a ⭐️!
