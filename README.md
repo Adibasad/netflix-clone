@@ -6,11 +6,14 @@ A dynamic and responsive Netflix clone built with React, featuring real-time dat
 Website: [Netflix Clone Demo](https://netflix-clone-git-production-adibasads-projects.vercel.app/)
 
 
+![Netflix Clone Screenshot](Screenshot-1.png))
+
 ![Netflix Clone Screenshot](Screenshot(10).png)
 
-![Netflix Clone Screenshot](Screenshot(11).png)
+![Netflix Clone Screenshot](Screenshot-2.png)
 
-![Netflix Clone Screenshot](Screenshot(13).png)
+![Netflix Clone Screenshot](Screenshot-3.png)
+
 Can play trailer!
 
 
