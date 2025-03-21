@@ -7,17 +7,25 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.1.0",
     "@testing-library/user-event": "^13.2.1",
+    "axios": "^1.8.4",
+    "movie-trailer": "^3.2.2",
     "nexflix-fe": "file:",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.4.0",
     "react-scripts": "5.0.1",
+    "react-youtube": "^10.1.0",
+    "rimraf": "^6.0.1",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "clean": "rimraf node_modules",
+    "cache clean": "rimraf .cache"
   },
   "eslintConfig": {
     "extends": [
