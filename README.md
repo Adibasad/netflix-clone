@@ -8,8 +8,6 @@ Website: [Netflix Clone Demo](https://netflix-clone-git-production-adibasads-pro
 
 ![Netflix Clone Screenshot](Screenshot-1.png))
 
-![Netflix Clone Screenshot](Screenshot(10).png)
-
 ![Netflix Clone Screenshot](Screenshot-2.png)
 
 ![Netflix Clone Screenshot](Screenshot-3.png)
